@@ -25,7 +25,7 @@ export default function Homepage() {
 
 
 
-   <div className="bg-blue-300 h-screen col-end-6 col-span-1 ">
+   <div className="bg-white h-screen col-end-6 col-span-1 ">
    <Acountbar/>
    </div>
     
