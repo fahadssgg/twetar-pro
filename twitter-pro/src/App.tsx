@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Profile from "./pages/Profile";
+
 function App() {
   return (
     <>
