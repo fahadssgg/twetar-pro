@@ -1,6 +1,8 @@
 import React from "react";
-
+import Twittws from "../Hooks/Twittws";
+import Likes from "../Hooks/Likes";
 export default function Profile() {
+  const [Btn, setBtn] = React.useState("");
   return (
     <div>
       <div className="flex justify-center gap-20 bg-black py-10">
@@ -10,6 +12,25 @@ export default function Profile() {
         />
         <h1 className="font-bold text-2xl text-white mt-20">Name:</h1>
       </div>
+      <div className="bg-slate-600 flex justify-center gap-60 text-xl font-bold text-white">
+        <button
+          onClick={() => {
+            setBtn("Mytwittes");
+          }}
+        >
+          Mytwittes
+        </button>
+        <button
+          onClick={() => {
+            setBtn("likes");
+          }}
+        >
+          likes
+        </button>
+      </div>
+
+      {Btn == "Mytwittes" && <Twittws />}
+      {Btn == "likes" && <Likes />}
     </div>
   );
 }

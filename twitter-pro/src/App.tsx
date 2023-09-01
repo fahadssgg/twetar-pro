@@ -7,18 +7,16 @@ import Login from "./pages/Login";
 import Acountbar from "./components/Acountbar";
 import Sidecpar from "./components/Sidepar";
 
-
 function App() {
   return (
     <>
       <Routes>
-      <Route path="/" element={<Homepage />}></Route>
-      <Route path="/Acountbar" element={<Acountbar />}></Route>
-      <Route path="/Sidecpar" element={<Sidecpar />}></Route>
+        <Route path="/" element={<Homepage />}></Route>
+        <Route path="/Acountbar" element={<Acountbar />}></Route>
+        <Route path="/Sidecpar" element={<Sidecpar />}></Route>
 
-
-      <Route path="/Signup" element={<Signup />}></Route>
-      <Route path="/login" element={<Login />}></Route>
+        <Route path="/Signup" element={<Signup />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/Profile" element={<Profile />}></Route>
       </Routes>
     </>
