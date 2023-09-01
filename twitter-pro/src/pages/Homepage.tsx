@@ -9,7 +9,7 @@ export default function Homepage() {
    
    <div className=" grid grid-cols-5 bg-red-500 h-screen">
 
-   <div className=" bg-green-500 h-screen col-start-1 col-end-2">
+   <div className=" bg-white h-screen col-start-1 col-end-2">
     <Sidecpar/>
    </div>
 
