@@ -16,7 +16,7 @@ export default function Acountbar() {
             
 
 
-        <hr className="border-gray-800"/>
+        <hr className="border-gray-300"/>
 
         {/* <!--first trending tweet--> */}
         <div className="flex">
@@ -27,14 +27,14 @@ export default function Acountbar() {
 
             </div>
             <div className="flex-1 px-4 py-2 m-2">
-                <a href="" className=" text-2xl rounded-full text-gray-400 hover:bg-gray-800 hover:text-blue-300 float-right">
+                <a href="" className=" text-2xl rounded-full text-gray-400 hover:bg-gray-300 hover:text-blue-300 float-right">
                     <svg className="m-2 h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </a>
             </div>
         </div>
-        <hr className="border-gray-800"/>
+        <hr className="border-gray-300"/>
 
         {/* <!--second trending tweet--> */}
 
@@ -46,14 +46,14 @@ export default function Acountbar() {
 
             </div>
             <div className="flex-1 px-4 py-2 m-2">
-                <a href="" className=" text-2xl rounded-full text-gray-400 hover:bg-gray-800 hover:text-blue-300 float-right">
+                <a href="" className=" text-2xl rounded-full text-gray-400 hover:bg-gray-300 hover:text-blue-300 float-right">
                     <svg className="m-2 h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </a>
             </div>
         </div>
-        <hr className="border-gray-800"/>
+        <hr className="border-gray-300"/>
 
         {/* <!--third trending tweet--> */}
 
@@ -65,14 +65,14 @@ export default function Acountbar() {
 
             </div>
             <div className="flex-1 px-4 py-2 m-2">
-                <a href="" className=" text-2xl rounded-full text-gray-400 hover:bg-gray-800 hover:text-blue-300 float-right">
+                <a href="" className=" text-2xl rounded-full text-gray-400 hover:bg-gray-300 hover:text-blue-300 float-right">
                     <svg className="m-2 h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </a>
             </div>
         </div>
-        <hr className="border-gray-800"/>
+        <hr className="border-gray-300"/>
 
 
             {/* <!--show more--> */}
@@ -93,7 +93,7 @@ export default function Acountbar() {
             </div>
 
 
-            <hr className="border-gray-800"/>
+            <hr className="border-gray-300"/>
 
             {/* <!--first person who to follow--> */}
 
@@ -116,14 +116,14 @@ export default function Acountbar() {
                 </div>
                 <div className=" flex-1 px-1 py-1 ">
                     <a href="" className=" float-right">
-                        <button className="bg-transparent hover:bg-gray-800 font-semibold hover:text-white py-2 px-3 border border-black hover:border-transparent rounded-full">
+                        <button className="bg-transparent hover:bg-gray-300 font-semibold hover:text-white py-2 px-3 border border-gray hover:border-transparent rounded-full">
                             Follow
                         </button>
                     </a>
 
                 </div>
             </div>
-            <hr className="border-gray-800"/>
+            <hr className="border-gray-300"/>
 
             {/* <!--second person who to follow--> */}
 
@@ -131,7 +131,7 @@ export default function Acountbar() {
                 <div className="flex-1 ">
                     <div className="flex items-center w-48">
                         <div>
-                            <img className="inline-block h-10 w-10 rounded-full ml-4 mt-2" src={profileImg} alt=""/>
+                            <img className="inline-block h-10 w-10 rounded-full ml-4 mt-2" src="https://1fid.com/wp-content/uploads/2022/06/Twitter-profile-picture-4-720x720.jpg" alt=""/>
                         </div>
                         <div className="ml-3 mt-3">
                             <p className="text-base leading-6 font-medium ">
@@ -145,7 +145,7 @@ export default function Acountbar() {
                 </div>
                 <div className=" flex-1 px-1 py-1 ">
                     <a href="" className=" float-right">
-                        <button className="bg-transparent hover:bg-gray-800 font-semibold hover:text-white py-2 px-3 border border-black hover:border-transparent rounded-full">
+                        <button className="bg-transparent hover:bg-gray-300 font-semibold hover:text-white py-2 px-3 border border-gray hover:border-transparent rounded-full">
                             Follow
                         </button>
                     </a>
@@ -153,7 +153,7 @@ export default function Acountbar() {
                 </div>
             </div>
 
-            <hr className="border-gray-800"/>
+            <hr className="border-gray-300"/>
 
 
 
