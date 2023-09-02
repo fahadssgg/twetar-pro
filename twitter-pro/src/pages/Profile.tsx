@@ -11,7 +11,7 @@ export default function Profile() {
           <Sidepar />
         </div>
 
-        <div className=" h-screen col-start-2 col-end-6">
+        <div className=" h-screen col-start-2 col-end-6 overflow-auto">
           <div className="flex justify-start gap-20 bg-blue-300 py-10 pl-10">
             <img
               className="rounded-full w-48 "

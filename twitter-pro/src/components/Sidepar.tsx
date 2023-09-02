@@ -14,7 +14,7 @@ export default function Sidepar() {
 
         <nav className="mt-5 px-2">
           <a
-            href="/"
+            href="/Homepage"
             className="group flex items-center px-2 py-2 text-base leading-6 font-semibold rounded-full  text-blue-500"
           >
             <svg
@@ -156,13 +156,16 @@ export default function Sidepar() {
             Tweet
           </button>
         </nav>
-  </div>
-  
-  <nav className="mt-40 px-2 flex justify-center">
-  <a href="/" className=" w-16  py-2 font-medium text-red-500 hover:text-gray-600">
-                Log Out
-            </a>
-  </nav>
-  </div>
+      </div>
 
-)}
+      <nav className="mt-40 px-2 flex justify-center">
+        <a
+          href="/"
+          className=" w-16  py-2 font-medium text-red-500 hover:text-gray-600"
+        >
+          Log Out
+        </a>
+      </nav>
+    </div>
+  );
+}

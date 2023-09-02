@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 type Itwit = {
   id: string;
-  Summry: string;
+  contant: string;
 };
 export default function Likes() {
   const [Twit, setTwit] = React.useState<Itwit[]>([]);
@@ -10,7 +10,7 @@ export default function Likes() {
   const [liked, setLiked] = React.useState<string[]>([]);
   React.useEffect(() => {
     axios
-      .get("https://64e1142f50713530432cee2a.mockapi.io/courses")
+      .get("https://64f2f3a3edfa0459f6c62798.mockapi.io/tweets")
       .then((res) => {
         setTwit(res.data);
       });
@@ -39,8 +39,8 @@ export default function Likes() {
         {likedItems.map((item: Itwit) => {
           return (
             <div className="rounded-sm border-2 h-20 w-10/12 max-sm:w-48 text-black  flex flex-col justify-start text-left ">
-              <h1 className="font-bold  ml-8 mt-3  max-sm:ml-3 text-base">
-                {item.Summry}
+              <h1 className="font-bold  ml-8 mt-6  max-sm:ml-3 text-base">
+                {item.contant}
               </h1>
             </div>
           );
