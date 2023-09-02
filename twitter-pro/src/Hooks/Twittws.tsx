@@ -8,26 +8,41 @@ export default function Twittws() {
   const ApiTwitts = "https://64e1142f50713530432cee2a.mockapi.io/courses";
 
   const [Twit, setTwit] = React.useState<Itwit[]>([]);
+  const [liked, setLiked] = React.useState<string[]>([]);
   React.useEffect(() => {
     axios.get(ApiTwitts).then((res) => {
       setTwit(res.data);
     });
+    const likedTwits = localStorage.getItem("likedTwits");
+    if (likedTwits) {
+      setLiked(JSON.parse(likedTwits));
+    }
   }, []);
-
+  React.useEffect(() => {
+    localStorage.setItem("likedTwits", JSON.stringify(liked));
+  }, [liked]);
   const deleteID = (id: string) => {
     axios
       .delete(`https://64e1142f50713530432cee2a.mockapi.io/courses/${id}`)
-      .then((res) => {
-        setTwit((prevTwit) => prevTwit.filter((item) => item.id !== id));
-        {
-          res;
-        }
+      .then(() => {
+        setTwit((prevTwit) => prevTwit.filter((twit) => twit.id !== id));
       });
+  };
+  const toggleLike = (id: string) => {
+    if (liked.includes(id)) {
+      setLiked((prevLiked) => prevLiked.filter((itemId) => itemId !== id));
+    } else {
+      setLiked((prevLiked) => [...prevLiked, id]);
+    }
   };
   return (
     <>
       <div className="  h-screen grid grid-cols-2 max-sm:grid-cols-1  bg-slate-50 p-10">
         {Twit.map((item) => {
+          const isLiked = liked.includes(item.id);
+          const likeImage = isLiked
+            ? "https://cdn-icons-png.flaticon.com/128/2589/2589175.png"
+            : "https://cdn-icons-png.flaticon.com/128/1077/1077035.png ";
           return (
             <div className="rounded-sm border-2 h-20 w-10/12 max-sm:w-48 text-black  flex flex-col justify-start text-left ">
               <h1 className="font-bold  ml-8 mt-3  max-sm:ml-3 text-base">
@@ -42,10 +57,10 @@ export default function Twittws() {
                   />
                 </a>
 
-                <a>
+                <a onClick={() => toggleLike(item.id)}>
                   <img
                     className="ml-8 mt-3 w-5 max-sm:w-6 cursor-pointer"
-                    src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"
+                    src={likeImage}
                   />
                 </a>
               </div>
