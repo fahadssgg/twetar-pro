@@ -1,18 +1,25 @@
-import React from 'react'
+import React from "react";
 import profileImg from "../assets/cat.jpg";
 
 export default function Acountbar() {
   return (
     <>
+      <div className="relative p-5">
+        <input
+          type="search"
+          name="search"
+          placeholder="Search Twitter"
+          className=" bg-gray-200 h-10 px-10 pr-5 w-full rounded-full text-sm focus:outline-none bg-purple-white shadow  border-0"
+        />
+      </div>
 
-    <div className="relative p-5">
-    <input type="search" name="search" placeholder="Search Twitter" className=" bg-gray-200 h-10 px-10 pr-5 w-full rounded-full text-sm focus:outline-none bg-purple-white shadow  border-0"/>
-    </div>
+      <div className="max-w-sm rounded-lg bg-dim-700 overflow-hidden shadow-lg m-4 ">
+        <div className="flex-1 m-2">
+          <h2 className="px-4 py-2 text-xl w-48 font-semibold">
+            Trends for you
+          </h2>
+        </div>
 
-        <div className="max-w-sm rounded-lg bg-dim-700 overflow-hidden shadow-lg m-4 ">
-            <div className="flex-1 m-2">
-                <h2 className="px-4 py-2 text-xl w-48 font-semibold">Trends for you</h2>
-            </div>
             
 
 
@@ -55,6 +62,7 @@ export default function Acountbar() {
         </div>
         <hr className="border-gray-300"/>
 
+
         {/* <!--third trending tweet--> */}
 
         <div className="flex">
@@ -74,23 +82,26 @@ export default function Acountbar() {
         </div>
         <hr className="border-gray-300"/>
 
+        {/* <!--show more--> */}
 
-            {/* <!--show more--> */}
-
-            <div className="flex">
-                <div className="flex-1 p-4">
-                    <h2 className="px-4 ml-2 w-48 font-bold text-blue-400">Show more</h2>
-                </div>
-            </div>
-
+        <div className="flex">
+          <div className="flex-1 p-4">
+            <h2 className="px-4 ml-2 w-48 font-bold text-blue-400">
+              Show more
+            </h2>
+          </div>
+          </div>
+      </div>
+      {/* <!--people suggetion to follow section--> */}
+      <div className="max-w-sm rounded-lg  bg-dim-700 overflow-hidden shadow-lg m-4">
+        <div className="flex">
+          <div className="flex-1 m-2">
+            <h2 className="px-4 py-2 text-xl w-48 font-semibold ">
+              Who to follow
+            </h2>
+          </div>
         </div>
-                {/* <!--people suggetion to follow section--> */}
-        <div className="max-w-sm rounded-lg  bg-dim-700 overflow-hidden shadow-lg m-4">
-            <div className="flex">
-                <div className="flex-1 m-2">
-                    <h2 className="px-4 py-2 text-xl w-48 font-semibold ">Who to follow</h2>
-                </div>
-            </div>
+
 
 
             <hr className="border-gray-300"/>
@@ -169,5 +180,5 @@ export default function Acountbar() {
 
 
     </>
-  )
+  );
 }
